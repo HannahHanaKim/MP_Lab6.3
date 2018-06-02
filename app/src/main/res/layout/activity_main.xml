@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:stretchColumns="3">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름:"/>
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="4"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="학번:"/>
+
+            <EditText
+                android:id="@+id/editNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="4"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <!--Buttons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추가"
+            android:gravity="center"
+            android:layout_marginLeft="104dp"/>
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:gravity="center"
+            android:layout_toRightOf="@id/addBtn"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>
